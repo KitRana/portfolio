@@ -727,6 +727,7 @@ header .navbar ul li a.active::before {
     overflow: hidden;
     flex: 0 0 100%;
     max-width: 100%;
+    margin-top: 4em;
     /* background-color: red; */
 }
 
@@ -795,12 +796,130 @@ header .navbar ul li a.active::before {
     background: linear-gradient(to top, #3399ff 0%, #9966ff 100%);
 }
 
+/* Blog */
 
+.blog {
+    padding: 8em 1em;
+}
 
+.blog .blog-content {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    margin-top: 4em;
 
+}
 
+.blog .blog-content .box {
+    /* background-color: lightblue; */
+    flex: 0 0 calc(33.33% - 1em);
+    max-width: calc(33.33% - 1em);
+}
 
+.blog .blog-content .box .img {
+    background-color: rgb(75, 147, 156);
+    overflow: hidden;
+}
 
+.blog .blog-content .box .img img {
+    width: 100%;
+    /* height: auto; */
+    display: block;
+    transition: all 0.5s ease;
+}
 
+.blog .blog-content .box .img img:hover {
+    transform: scale(1.1);
+}
 
+.blog .blog-content .box .info {
+    padding: .3em 0;
+}
 
+.blog .blog-content .box .info span {
+    font-size: .8em;
+    color: #838383;
+}
+
+.blog .blog-content .box .info span:nth-child(2) {
+    border-left: 0.1em solid #dddddd;
+    padding-left: 0.5em;
+    margin-left: 0.5em;
+}
+
+.blog .blog-content .box h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #000000;
+    margin: 0.6em 0 0.6em;
+    padding: 0;
+}
+
+.blog .blog-content .box p {
+    margin: 0 0 .6em;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.2em;
+    color: #838383;
+}
+
+.blog .blog-content .box a {
+    display: inline-block;
+    font-size: .8em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 0.2em solid #3399ff;
+    color: #3399ff;
+    transition: all 1s ease;
+}
+
+.blog .blog-content .box a:hover {
+    color: #000000;
+    border-bottom: 0.2em solid #000000;
+}
+
+/* CONTACT */
+
+.contact {
+    padding: 8em 1em;
+}
+
+.contact .contact-form {
+    background-color: #ffffff;
+    padding: 2em 2em;
+    border: .03em solid #eeeeee;
+    border-radius: .5em;
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.contact .contact-form .text {
+    /* background-color: blue; */
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 1em;
+}
+
+.contact .contact-form .text h2 {
+     font-size: 2em;
+     font-weight: 600;
+}
+
+.contact .contact-form .text p {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.2em;
+    color: #838383;
+    margin: 0;
+}
+
+.contact .contact-form .space-between {
+    justify-content: space-between;
+}
+
+.contact .contact-form .col-6 {
+    flex: 0 0 calc(50% - 1em);
+    max-width: calc(50% - 1em);
+}

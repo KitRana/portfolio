@@ -82,7 +82,7 @@ portfolioItem.forEach(function (item) {
 const sliderContainer = document.querySelector(".rec-slider");
 const slides = sliderContainer.children;
 const containerWidth = sliderContainer.offsetWidth;
-const margin = 30;
+const margin = 40;
 // console.log(containerWidth);
 
 let slideItem = 0;
@@ -200,5 +200,15 @@ a.forEach(function(element){
             a[i].classList.remove("active")
         }
         this.classList.add("active")
+        document.querySelector("header").querySelector(".navbar").classList.toggle("show")
     })
+})
+
+// HAMBURGER MENU
+
+const hbMenu = document.querySelector(".hb-menu");
+
+hbMenu.addEventListener("click", function(){
+    const navHeader = document.querySelector("header");
+    navHeader.querySelector(".navbar").classList.toggle("show")
 })

@@ -82,7 +82,7 @@ portfolioItem.forEach(function (item) {
 const sliderContainer = document.querySelector(".rec-slider");
 const slides = sliderContainer.children;
 const containerWidth = sliderContainer.offsetWidth;
-const margin = 40;
+const margin = 30;
 // console.log(containerWidth);
 
 let slideItem = 0;

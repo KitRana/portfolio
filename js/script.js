@@ -49,6 +49,8 @@ const lightBoxImage = lightBox.querySelector("img");
             // console.log("close")
             lightBox.classList.remove("show");
             lightBox.classList.add("hide");
+            portfolio.querySelector(".item").querySelector("img[alt='test2']").classList.add("hide");
+
         } 
         else {
             // console.log("do not close")
@@ -60,6 +62,8 @@ const lightBoxImage = lightBox.querySelector("img");
         // console.log("closeLightbox")
         lightBox.classList.remove("show");
         lightBox.classList.add("hide");
+        portfolio.querySelector(".item").querySelector("img[alt='test2']").classList.add("hide");
+
     })
 
 
@@ -73,7 +77,9 @@ portfolioItem.forEach(function (item) {
         // console.log(this)
         lightBox.classList.remove("hide");
         lightBox.classList.add("show");
-        lightBoxImage.src = item.querySelector("img").getAttribute("src");
+        // item.querySelector("img[alt='test2']").classList.remove("hide");
+        // lightBoxImage.src = item.querySelector("img").getAttribute("src");  
+        lightBoxImage.src = item.querySelector("img[alt='test2']").getAttribute("src");
     })
 })
 

@@ -1535,3 +1535,12 @@ footer .social a:hover i {
     }
 
 }
+
+
+/* .portfolio .portfolio-gallery .item img.active {
+    display: block;
+} */
+
+.portfolio .portfolio-gallery .item img.hide {
+    display: none;
+}

@@ -652,6 +652,7 @@ header .navbar ul li a.active::before {
 
 .portfolio .portfolio-gallery .item .inner {
     position: relative;
+    background: #ffffff;
 }
 
 .portfolio .portfolio-gallery .item img {
@@ -659,7 +660,7 @@ header .navbar ul li a.active::before {
     width: 100%;
     display: block;
     height: 25em;
-    border-radius: 1em;
+    border-radius: 1.5em;
     box-shadow: 10px 5px 10px #00000025;
     padding: 1em 1em;
 }

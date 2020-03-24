@@ -41,6 +41,8 @@ for (let i = 0; i < filterButtons.length; i++) {
 const closeLightbox = document.querySelector(".close-lightbox");
 const lightBox = document.querySelector(".lightbox");
 const lightBoxImage = lightBox.querySelector("img");
+const lightBoxH4 = lightBox.querySelector("h4");
+const lightBoxP = lightBox.querySelector("p");
 
     lightBox.addEventListener("click", function() {
         // console.log(event.target)
@@ -80,6 +82,8 @@ portfolioItem.forEach(function (item) {
         // item.querySelector("img[alt='test2']").classList.remove("hide");
         // lightBoxImage.src = item.querySelector("img").getAttribute("src");  
         lightBoxImage.src = item.querySelector("img[alt='test2']").getAttribute("src");
+        lightBoxH4.innerHTML = item.querySelector("h4").innerHTML;
+        lightBoxP.innerHTML = item.querySelector("p").innerHTML;
     })
 })
 

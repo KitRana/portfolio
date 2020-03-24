@@ -782,53 +782,72 @@ header .navbar ul li a.active::before {
 }
 
 .lightbox .info-card {
-    background: linear-gradient(to top, #3399fff1 0%, #9966ff 100%);
+    background: linear-gradient(to top, #3399ffd3 0%, #9966ffd3 100%);
     /* background-color: #462cbd5d; */
-    border-radius: 1em;
-    padding: 1em 2em 2em;
+    border-radius: 50%;
+    padding: 6em 2em;
     margin: 0 2em;
-    height: 50em;
-    width: 62em;
+    height: 57em;
+    width: 57em;
     /* display: inline; */
-    position: absolute;
+    /* position: relative; */
 }
 
 .lightbox .info-card img {
     max-width: 100%;
     max-height: auto;
     display: block;
-    border: 0.01em solid #eeeeee;
+    border: 0.01em solid #00000057;
     /* flex: 0 0 100%; */
     margin-right: 1em;
     margin-left: 1em;
-    border-radius: 1em;
+    border-radius: 0.5em;
     box-shadow: 10px 5px 15px rgba(0,0,0,0.3);
     /* height: 30em; */
     /* width: auto; */
 }
 
 .lightbox .info-card .info-card-text {
-    background: #ffffff;
+    background: #000000;
     flex: 0 0 100%;
     max-width: 100%;
-    padding: 1em 1em;
+    padding: 2em 2em;
     border-radius: 1em;
     box-shadow: 10px 5px 15px rgba(0,0,0,0.3);
     border: 0.01em solid #eeeeee;
-    height: 22em;
-    width: 25em;
+    height: 25em;
+    width: 35em;
     position: absolute;
-    top: 24em;
-    left: 35em;
+    top: 50%;
+    right: 24%;
+    left: 40%;
+}
 
+.lightbox .info-card .info-card-text h4 {
+    color: #ffffff;
+    font-size: 20px;
+}
+.lightbox .info-card .info-card-text p {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+.lightbox .info-card .info-card-text h5 {
+    color: #ffffff;
+    font-size: 16px;
 }
 
 .lightbox .info-card .button {
     flex: 0 0 100%;
     max-width: 100%;
-    margin: 9em 0 1em;
-    text-align: end;
-    padding: 1em 1em;
+    margin: 0em 0px;
+    /* text-align: end; */
+    padding: 1em 0em;
+    /* vertical-align: bottom; */
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+    float: right;
 }
 
 .lightbox .info-card .button a {
@@ -1345,6 +1364,10 @@ footer .social a:hover i {
     #home .home-content .block h1 {
         font-size: 50px;
     }
+
+    .lightbox .info-card .info-card-text {
+        left: 16%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1457,8 +1480,31 @@ footer .social a:hover i {
         padding-top: 1em;
     }
 
-}
+    .lightbox .info-card {
+        padding: 2em 2em;
+        height: 60%;
+        width: 90%;
+    }
 
+    .lightbox .info-card .info-card-text {
+        height: 20em;
+        width: 35em;
+        top: 50%;
+        left: 13%;
+    }
+
+    .lightbox .info-card .info-card-text p {
+        font-size: 14px;
+    }
+
+    .lightbox .info-card .button {
+        padding: 0;
+    }
+
+    .lightbox .info-card img {
+        margin: -1em 0em;
+    }
+}
 @media(max-width: 500px){
     #home .home-content .block h1 {
         font-size: 30px;
@@ -1539,6 +1585,36 @@ footer .social a:hover i {
         flex: 0 0 100%;
         max-width: 100%;
         margin: 0;
+    }
+
+    .lightbox .info-card {
+        height: 65%;
+        padding: 2em 1em;
+        border-radius: 2%;
+        
+    }
+
+    .lightbox .info-card .info-card-text {
+        height: 20em;
+        width: 22em;
+        top: 44%;
+        left: 13%;
+    }
+
+    .lightbox .info-card .info-card-text p {
+        font-size: 12px;
+    }
+
+    .lightbox .info-card .info-card-text h4 {
+        font-size: 15px;
+    }
+
+    .lightbox .info-card .info-card-text h5 {
+        font-size: 13px;
+    }
+
+    .lightbox .info-card .button a span {
+        font-size: 12px;
     }
 
 }

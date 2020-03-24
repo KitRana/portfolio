@@ -43,6 +43,8 @@ const lightBox = document.querySelector(".lightbox");
 const lightBoxImage = lightBox.querySelector("img");
 const lightBoxH4 = lightBox.querySelector("h4");
 const lightBoxP = lightBox.querySelector("p");
+const lightBoxH5 = lightBox.querySelector("h5");
+const lightBoxA = lightBox.querySelector("a");
 
     lightBox.addEventListener("click", function() {
         // console.log(event.target)
@@ -84,6 +86,8 @@ portfolioItem.forEach(function (item) {
         lightBoxImage.src = item.querySelector("img[alt='test2']").getAttribute("src");
         lightBoxH4.innerHTML = item.querySelector("h4").innerHTML;
         lightBoxP.innerHTML = item.querySelector("p").innerHTML;
+        lightBoxH5.innerHTML = item.querySelector("h5").innerHTML;
+        lightBoxA.href = item.querySelector("a").getAttribute("href");
     })
 })
 

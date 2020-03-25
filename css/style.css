@@ -1659,12 +1659,14 @@ footer .social a:hover i {
 
     .lightbox .info-card {
         background: linear-gradient(to top, #3399fff3 0%, #9966fff3 100%);
+        height: 75%;
     }
     .lightbox .info-card .info-card-text {
         background: none;
         box-shadow: none;
         border: none;
         left: 8%;
+        top: 42%;
     
     }
     .lightbox .info-card .button {

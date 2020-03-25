@@ -6,15 +6,16 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0;
-    /* font-family: 'Nunito Sans', sans-serif; */
-    font-family: 'Roboto', sans-serif;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -27,7 +28,8 @@ p {
 } */
 .container {
     max-width: 1140px;
-    margin: auto;
+    position: relative;
+    /* margin: auto; */
 }
 
 .row {
@@ -39,7 +41,7 @@ header {
     left: 0;
     right: 0;
     border-bottom: 1px solid #ffffff18;
-    box-shadow: 10px 5px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
     padding: 0 10em;
     z-index: 100;
 }
@@ -47,6 +49,7 @@ header {
 header.fixed {
     background-color: #ffffff;
     position: fixed;
+    width: 100%;
     border-bottom: .05em solid #0000001a;
     /* box-shadow: 10px 5px 10px rgba(0,0,0,0.1); */
     animation: fixedHeader 0.5s ease;
@@ -177,7 +180,7 @@ header .navbar ul li a.active::before {
     max-width: 100%;
     text-align: center;
     height: 20em;
-    margin-top: -2em;
+    margin-top: 0em;
     
 }
 
@@ -347,8 +350,7 @@ header .navbar ul li a.active::before {
     /* background-color: green; */
     flex: 0 0 70%;
     max-width: 70%;
-    padding-top: 1em;
-    margin: 0 2em;
+    padding: 0 2em;
 }
 
 .about .about-content .text h4 {
@@ -359,7 +361,7 @@ header .navbar ul li a.active::before {
 
 .about .about-content .text h6 {
     font-size: 20px;
-    margin: 0 0 .5em;
+    margin: 0.5em 0 .5em;
     color: #000000;
 }
 
@@ -1383,7 +1385,7 @@ footer .social a:hover i {
         background-color: #ffffff;
         border: none;
         border-bottom: 0.05em solid #eeeeee;
-        /* box-shadow: 10px 5px 10px rgba(0,0,0,0.1); */
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
     }
 
     .hb-menu .fa {
@@ -1391,20 +1393,21 @@ footer .social a:hover i {
     }
 
     header .navbar {
-        position: absolute;
+        position: fixed;
         background-color: #ffffff;
         width: 100%;
         left: 0;
-        top: 79px;
+        top: 80px;
         padding: 1em;
-        border-top: .05em solid #0000001a;
+        /* border-top: .05em solid #0000001a; */
         border-bottom: .05em solid #0000001a;
-        box-shadow: 10px 5px 10px rgba(0,0,0,0.1);
+        /* box-shadow: 0px 5px 10px rgba(0,0,0,0.1); */
         display: none;
     }
 
     header .navbar.show {
         display: block;
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
     }
 
     header .brand-name a {
@@ -1429,7 +1432,7 @@ footer .social a:hover i {
         /* background-color: green; */
         flex: 0 0 100%;
         max-width: 100%;
-        padding-left: 0px;
+        text-align: center;
     }
 
     .about .about-content .img {
@@ -1440,8 +1443,9 @@ footer .social a:hover i {
     }
 
     .about .about-content .img img {
-        width: 50%;
-        margin: 0 10em;
+        /* width: 50%; */
+        transform: scale(0.8);
+        /* margin: 0 10em; */
     }
 
     .section-title {
@@ -1508,6 +1512,7 @@ footer .social a:hover i {
     }
 }
 @media(max-width: 500px){
+
     #home .home-content .block {
         flex: 0 0 50%;
         max-width: 50%;
@@ -1530,10 +1535,11 @@ footer .social a:hover i {
 
     .about .about-content .img {
         padding-top: 0;
+        text-align: center;
     }
     .about .about-content .img img {
         /* width: 50%; */
-        margin: 0 6em;
+        margin: 0;
     }
 
 
@@ -1581,6 +1587,7 @@ footer .social a:hover i {
 
     .recommendations .recommendations-content .rec-slider .slide p {
         margin: 0 2em;
+        font-size: 13px;
     }
 
     .recommendations .recommendations-content .rec-slider .slide p:nth-child(3) {
@@ -1624,6 +1631,48 @@ footer .social a:hover i {
     }
 
 }
+
+@media (max-width: 441px) {
+    #home .home-content .img {
+        margin-top: 6em;
+    }
+    #home .home-content .img img {
+        width: 50%;
+        transform: none;
+    }
+
+    #home .home-content .block {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
+    .about .about-content .text h4 {
+        font-size: 18px;
+    }
+
+    .about .about-content .text h6 {
+        font-size: 16px;
+    }
+    .about .about-content .text p {
+        font-size: 12px;
+    }
+
+    .lightbox .info-card {
+        background: linear-gradient(to top, #3399fff3 0%, #9966fff3 100%);
+    }
+    .lightbox .info-card .info-card-text {
+        background: none;
+        box-shadow: none;
+        border: none;
+        left: 8%;
+    
+    }
+    .lightbox .info-card .button {
+        bottom: 0;
+    }
+
+}
+
 
 
 /* .portfolio .portfolio-gallery .item img.active {

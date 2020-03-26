@@ -185,7 +185,7 @@ function autoPlay() {
     }
     changeSlide(autoSlide);
 }
-let timer = setInterval(autoPlay, 5000);
+let timer = setInterval(autoPlay, 10000);
 
 window.onload = load();
 

@@ -1627,7 +1627,7 @@ footer .social a:hover i {
     }
 
     .lightbox .info-card .button a span {
-        font-size: 12px;
+        font-size: 13px;
     }
 
 }
@@ -1658,8 +1658,17 @@ footer .social a:hover i {
     }
 
     .lightbox .info-card {
-        background: linear-gradient(to top, #3399fff3 0%, #9966fff3 100%);
-        height: 75%;
+        background: linear-gradient(to top, #000000d3 60%, #3399ff 80%, #9966ff 100%);
+        height: 85%;
+        width: 95%;
+        position: absolute;
+        top: 5em;
+        /* right: 1em; */
+        margin: 0;
+    }
+
+    .lightbox .info-card img {
+        margin: 0;
     }
     .lightbox .info-card .info-card-text {
         background: none;
@@ -1667,10 +1676,13 @@ footer .social a:hover i {
         border: none;
         left: 8%;
         top: 42%;
+        position: unset;
+        padding: 2em 1em;
     
     }
-    .lightbox .info-card .button {
-        bottom: 0;
+
+    .recommendations .recommendations-content .rec-slider .slide p {
+        margin: 0 1em;
     }
 
 }

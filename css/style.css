@@ -1371,6 +1371,22 @@ footer .social a:hover i {
     }
 }
 
+
+@media (max-width: 825px) {
+    header  {
+        padding: 0 5em;
+    }
+
+    .portfolio .portfolio-gallery .item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .recommendations .recommendations-content .rec-slider .slide .text {
+        padding: 2em 0em;
+    }
+}
+
 @media (max-width: 768px) {
     #home .home-content .block {
         flex: 0 0 45%;
@@ -1488,20 +1504,37 @@ footer .social a:hover i {
     }
 
     .lightbox .info-card {
+        border-radius: 1%;
         padding: 2em 2em;
-        height: 60%;
+        height: 85%;
         width: 90%;
+        position: absolute;
+        top: 5em;
+        margin: 0;
+        background: linear-gradient(to top, #000000d3 25%, #3399ff 70%, #9966ff 100%);
     }
 
     .lightbox .info-card .info-card-text {
-        height: 20em;
-        width: 35em;
-        top: 50%;
-        left: 13%;
+        background: none;
+        box-shadow: none;
+        border: none;
+        left: 8%;
+        top: 42%;
+        position: unset;
+        padding: 2em 1em;
+    }
+
+    .lightbox .info-card .info-card-text h4 {
+        font-size:  16px;
+    }
+
+    .lightbox .info-card .info-card-text h5 {
+        font-size:  14px;
+        padding-right: 7em;
     }
 
     .lightbox .info-card .info-card-text p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .lightbox .info-card .button {
@@ -1509,7 +1542,9 @@ footer .social a:hover i {
     }
 
     .lightbox .info-card img {
-        margin: -1em 0em;
+        margin: 0em 0em;
+        height: 23em;
+        width: 100%;
     }
 }
 @media(max-width: 500px){
@@ -1667,7 +1702,7 @@ footer .social a:hover i {
         font-size: 16px;
     }
     .about .about-content .text p {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .lightbox .info-card {

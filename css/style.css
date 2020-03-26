@@ -972,15 +972,15 @@ header .navbar ul li a.active::before {
 .recommendations .recommendations-content .rec-slider .slide {
     background-color: #ffffff;
     margin-bottom: 1em;
-    padding: 1.5em 1.5em;
-    border: .03em solid #eeeeee;
+    padding: 1em 1em;
+    border: .04em solid #eeeeee73;
     border-radius: .5em;
     box-shadow: 10px 5px 10px rgba(0,0,0,0.1);
     display: flex;
     flex-wrap: nowrap;
     float: left;
     width: 100%;
-    height: 15em;
+    height: 16em;
 
 }
 
@@ -1012,6 +1012,7 @@ header .navbar ul li a.active::before {
     border-radius: 50%;
     display: block;
     padding: 4px 4px;
+    width: 115px;
     /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
     /* border: .2em solid #ffffff; */
 
@@ -1026,7 +1027,7 @@ header .navbar ul li a.active::before {
 .recommendations .recommendations-content .rec-slider .slide h4 {
     margin: 1em 1em .5em;
     font-size: 0.9em;
-    position: absolute;
+    /* position: absolute; */
     bottom: 1em;
 }
 
@@ -1053,7 +1054,7 @@ header .navbar ul li a.active::before {
 }
 
 .recommendations .recommendations-content .rec-slider .slide p:nth-child(3) {
-    position: absolute;
+    /* position: absolute; */
     bottom: 0em;
     font-size: 0.9em;
 
@@ -1635,15 +1636,27 @@ footer .social a:hover i {
 @media (max-width: 470px) {
     #home .home-content .img {
         margin-top: 6em;
+        display: flex;
+        justify-content: center;
+        height: fit-content;
     }
     #home .home-content .img img {
-        width: 50%;
+        width: 40%;
         transform: none;
     }
 
     #home .home-content .block {
         flex: 0 0 60%;
         max-width: 60%;
+        margin-bottom: 2em;
+    }
+
+    .about .about-content {
+        padding: 0 1em;
+    }
+
+    .about .about-content .text {
+        padding: 0 1em;
     }
 
     .about .about-content .text h4 {
@@ -1654,7 +1667,7 @@ footer .social a:hover i {
         font-size: 16px;
     }
     .about .about-content .text p {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .lightbox .info-card {

@@ -206,7 +206,7 @@ window.onscroll = function() {
 // NAVBAR LINKS
 
 const navbar = document.querySelector(".navbar");
-const a = document.querySelectorAll("a");
+const a = navbar.querySelectorAll("a");
 
 a.forEach(function(element){
     element.addEventListener("click", function(){
@@ -225,4 +225,15 @@ const hbMenu = document.querySelector(".hb-menu");
 hbMenu.addEventListener("click", function(){
     const navHeader = document.querySelector("header");
     navHeader.querySelector(".navbar").classList.toggle("show")
+})
+
+// CONTACT FORM PROMPT
+const contactSection = document.querySelector(".contact");
+const contactForm = contactSection.querySelector(".contact-form");
+const sendButton = contactForm.querySelector(".sendButton");
+console.log(sendButton);
+
+sendButton.addEventListener("click", function(){
+    console.log("button click");
+    window.alert("Oops! Sorry, the contact form back-end is still being built.\nPlease reach out to me through my social media links.\nThank you so much!");
 })

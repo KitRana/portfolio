@@ -1510,10 +1510,10 @@ footer .social a:hover i {
     .lightbox .info-card {
         border-radius: 1%;
         padding: 2em 2em;
-        height: 85%;
+        height: 75%;
         width: 90%;
         position: absolute;
-        top: 5em;
+        top: 6em;
         margin: 0;
         background: linear-gradient(to top, #000000d3 25%, #3399ff 70%, #9966ff 100%);
     }
@@ -1543,8 +1543,8 @@ footer .social a:hover i {
 
     .lightbox .info-card img {
         margin: 0em 0em;
-        height: 20em;
-        width: 100%;
+        height: 18em;
+        /* width: 100%; */
         position: relative;
         top: 0;
         left: 0;
@@ -1725,6 +1725,7 @@ footer .social a:hover i {
 
     .lightbox .info-card img {
         margin: 0;
+        height: 16em;
     }
     .lightbox .info-card .info-card-text {
         background: none;
@@ -1751,4 +1752,25 @@ footer .social a:hover i {
 
 .portfolio .portfolio-gallery .item img.hide {
     display: none;
+}
+
+.lightbox .info-card ul {
+    display: none;
+}
+.lightbox .info-card ul.tech-list {
+    flex: 0 0 28%;
+    max-width: 28%;
+    list-style: none;
+    padding-left: 1.5em;
+}
+
+.lightbox .info-card ul.tech-list li.tech-item {
+    display: none;
+}
+
+.lightbox .info-card ul.tech-list li.tech-item.show {
+    display: block;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5em;
 }

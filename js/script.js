@@ -43,8 +43,13 @@ const lightBox = document.querySelector(".lightbox");
 const lightBoxImage = lightBox.querySelector("img");
 const lightBoxH4 = lightBox.querySelector("h4");
 const lightBoxP = lightBox.querySelector("p");
-const lightBoxH5 = lightBox.querySelector("h5");
+const lightBoxH5 = lightBox.querySelector(".info-card-text").querySelector("h5");
 const lightBoxA = lightBox.querySelector("a");
+
+// test
+const lightBoxInfo = lightBox.querySelector(".info-card");
+const lightBoxInfoUl = lightBoxInfo.querySelector("ul");
+const lightBoxInfoUlli = lightBoxInfoUl.querySelectorAll("li");
 
     lightBox.addEventListener("click", function() {
         // console.log(event.target)
@@ -75,6 +80,9 @@ const lightBoxA = lightBox.querySelector("a");
 
 const portfolio = document.querySelector(".portfolio-gallery");
 const portfolioItem = portfolio.querySelectorAll(".item");
+const portfolioItemUl = portfolio.querySelector(".item").querySelector("ul.tech-list");
+const portfolioItemUlli = portfolioItemUl.querySelectorAll("li");
+// console.log(portfolioItemUlli);
 
 portfolioItem.forEach(function (item) {
     item.querySelector(".fa-plus").addEventListener("click", function() {
@@ -86,8 +94,13 @@ portfolioItem.forEach(function (item) {
         lightBoxImage.src = item.querySelector("img[alt='test2']").getAttribute("src");
         lightBoxH4.innerHTML = item.querySelector("h4").innerHTML;
         lightBoxP.innerHTML = item.querySelector("p").innerHTML;
-        lightBoxH5.innerHTML = item.querySelector("h5").innerHTML;
+        lightBoxH5.innerHTML = item.querySelector(".lightbox-info").querySelector("h5").innerHTML;
         lightBoxA.href = item.querySelector("a").getAttribute("href");
+
+        for (let i = 0; i < portfolioItemUlli.length; i++) {
+            lightBoxInfoUlli[i].innerHTML = item.querySelector("ul").querySelectorAll("li")[i].innerHTML;
+            lightBoxInfoUlli[i].classList.add("show");
+        }
     })
 })
 
@@ -231,9 +244,7 @@ hbMenu.addEventListener("click", function(){
 const contactSection = document.querySelector(".contact");
 const contactForm = contactSection.querySelector(".contact-form");
 const sendButton = contactForm.querySelector(".sendButton");
-console.log(sendButton);
 
 sendButton.addEventListener("click", function(){
-    console.log("button click");
     window.alert("Oops! Sorry, the contact form back-end is still being built.\nPlease reach out to me through my social media links.\nThank you so much!");
 })

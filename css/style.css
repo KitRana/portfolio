@@ -787,8 +787,8 @@ header .navbar ul li a.active::before {
     border-radius: 50%;
     padding: 1em 1em;
     margin: 0 0em;
-    height: 45em;
-    width: 45em;
+    height: 40em;
+    width: 40em;
     /* display: inline; */
     /* position: relative; */
 }
@@ -805,6 +805,10 @@ header .navbar ul li a.active::before {
     box-shadow: 10px 5px 15px rgba(0,0,0,0.3);
     /* height: 30em; */
     /* width: auto; */
+    position: absolute;
+    top: 2em;
+    left: 6em;
+    /* right: 0em; */
 }
 
 .lightbox .info-card .info-card-text {
@@ -814,20 +818,21 @@ header .navbar ul li a.active::before {
     padding: 2em 2em;
     border-radius: 1em;
     box-shadow: 10px 5px 15px rgba(0,0,0,0.3);
-    height: 23em;
+    height: 21em;
     width: 40em;
     position: absolute;
-    top: 50%;
-    left: 26%;  
+    top: 45%;
+    right: 6em;  
 }
 
 .lightbox .info-card .info-card-text h4 {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
 }
 .lightbox .info-card .info-card-text p {
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
+    font-size: 15px;
 }
 
 .lightbox .info-card .info-card-text h5 {
@@ -1537,13 +1542,17 @@ footer .social a:hover i {
     }
 
     .lightbox .info-card .button {
-        padding: 0;
+        /* padding: 0; */
     }
 
     .lightbox .info-card img {
         margin: 0em 0em;
-        height: 23em;
+        height: 20em;
         width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+
     }
 }
 @media(max-width: 500px){
@@ -1636,10 +1645,14 @@ footer .social a:hover i {
     }
 
     .lightbox .info-card {
-        height: 65%;
+        height: 88%;
         padding: 2em 1em;
         border-radius: 2%;
         
+    }
+
+    .lightbox .info-card img {
+        height: 20em;
     }
 
     .lightbox .info-card .info-card-text {

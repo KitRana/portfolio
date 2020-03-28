@@ -1510,12 +1510,13 @@ footer .social a:hover i {
     .lightbox .info-card {
         border-radius: 1%;
         padding: 2em 2em;
-        height: 75%;
-        width: 90%;
+        height: 95%;
+        width: 87%;
         position: absolute;
-        top: 6em;
+        top: 1em;
+        left: 1em;
         margin: 0;
-        background: linear-gradient(to top, #000000d3 25%, #3399ff 70%, #9966ff 100%);
+        background: linear-gradient(to top, #000000d3 45%, #3399ff 75%, #9966ff 100%);
     }
 
     .lightbox .info-card .info-card-text {
@@ -1525,7 +1526,7 @@ footer .social a:hover i {
         left: 8%;
         top: 42%;
         position: unset;
-        padding: 2em 1em;
+        padding: 2em 0em;
     }
 
     .lightbox .info-card .info-card-text h4 {
@@ -1533,6 +1534,7 @@ footer .social a:hover i {
     }
 
     .lightbox .info-card .info-card-text h5 {
+        display: none;
         font-size:  14px;
         padding-right: 7em;
     }
@@ -1550,6 +1552,34 @@ footer .social a:hover i {
         left: 0;
 
     }
+
+    .lightbox .info-card ul {
+        display: block;
+    }
+
+    .lightbox .info-card ul.tech-list {
+        flex: 0 0 25%;
+        max-width: 25%;
+        list-style: none;
+        padding-left: 1.5em;
+    }
+
+    .lightbox .info-card ul.tech-list li.tech-item {
+        display: none;
+    }
+
+    .lightbox .info-card ul.tech-list li.tech-item.show {
+        display: block;
+        color: #ffffff;
+        font-size: 15px;
+        line-height: 1.5em;
+    }
+
+    .lightbox .info-card ul.tech-list li.tech-item.show h5 {
+        font-size: 15px;
+    }
+
+
 }
 @media(max-width: 500px){
 
@@ -1667,11 +1697,17 @@ footer .social a:hover i {
     }
 
     .lightbox .info-card .info-card-text h5 {
-        font-size: 13px;
+        display: block;
+        font-size:  14px;
+        padding-right: 7em;
     }
 
     .lightbox .info-card .button a span {
         font-size: 13px;
+    }
+
+    .lightbox .info-card ul {
+        display: none;
     }
 
 }
@@ -1754,8 +1790,8 @@ footer .social a:hover i {
     display: none;
 }
 
-.lightbox .info-card ul {
-    display: none;
+/* .lightbox .info-card ul {
+    display: block;
 }
 .lightbox .info-card ul.tech-list {
     flex: 0 0 28%;
@@ -1773,4 +1809,4 @@ footer .social a:hover i {
     color: #ffffff;
     font-size: 16px;
     line-height: 1.5em;
-}
+} */

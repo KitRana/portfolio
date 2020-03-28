@@ -784,13 +784,13 @@ header .navbar ul li a.active::before {
 .lightbox .info-card {
     background: linear-gradient(to top, #3399ffd3 0%, #9966ffd3 100%);
     /* background-color: #462cbd5d; */
-    border-radius: 50%;
+    border-radius: 1em;
     padding: 1em 1em;
     margin: 0 0em;
-    height: 40em;
-    width: 40em;
+    height: 49em;
+    width: 54em;
     /* display: inline; */
-    /* position: relative; */
+    position: relative;
 }
 
 .lightbox .info-card img {
@@ -807,8 +807,12 @@ header .navbar ul li a.active::before {
     /* width: auto; */
     position: absolute;
     top: 2em;
-    left: 6em;
+    left: 1em;
     /* right: 0em; */
+}
+
+.lightbox .info-card ul.tech-list {
+    display: none;
 }
 
 .lightbox .info-card .info-card-text {
@@ -821,8 +825,9 @@ header .navbar ul li a.active::before {
     height: 21em;
     width: 40em;
     position: absolute;
-    top: 45%;
-    right: 6em;  
+    /* top: 50%; */
+    bottom: 3em;
+    right: 2em;
 }
 
 .lightbox .info-card .info-card-text h4 {
@@ -1508,13 +1513,13 @@ footer .social a:hover i {
     }
 
     .lightbox .info-card {
-        border-radius: 1%;
+       border-radius: 1%;
         padding: 2em 2em;
-        height: 95%;
+        height: 80%;
         width: 87%;
         position: absolute;
-        top: 1em;
-        left: 1em;
+        top: 5em;
+        left: 3em;
         margin: 0;
         background: linear-gradient(to top, #000000d3 45%, #3399ff 75%, #9966ff 100%);
     }
@@ -1555,14 +1560,12 @@ footer .social a:hover i {
 
     .lightbox .info-card ul {
         display: block;
-    }
-
-    .lightbox .info-card ul.tech-list {
         flex: 0 0 25%;
         max-width: 25%;
         list-style: none;
         padding-left: 1.5em;
     }
+
 
     .lightbox .info-card ul.tech-list li.tech-item {
         display: none;
@@ -1751,11 +1754,12 @@ footer .social a:hover i {
 
     .lightbox .info-card {
         background: linear-gradient(to top, #000000d3 60%, #3399ff 80%, #9966ff 100%);
-        height: 85%;
-        width: 95%;
+        height: 90%;
+        width: 90%;
         position: absolute;
         top: 5em;
-        /* right: 1em; */
+        /* right: 0em; */
+        left: 1em;
         margin: 0;
     }
 

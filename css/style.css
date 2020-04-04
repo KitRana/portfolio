@@ -805,6 +805,8 @@ header .navbar ul li a.active::before {
     border: 0.01em solid #00000057;
     border-radius: 0.5em;
     box-shadow: 10px 5px 15px rgba(0,0,0,0.3);
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 
 .lightbox .info-card ul.tech-list {

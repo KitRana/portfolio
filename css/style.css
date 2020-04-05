@@ -1744,8 +1744,10 @@ footer .social a:hover i {
     } */
 
     .lightbox .info-card img {
-        margin: 0;
-        height: 16em;
+        margin-top: 1em;
+        height: 15em;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
     /* .lightbox .info-card .info-card-text {
         background: none;

@@ -665,6 +665,7 @@ header .navbar ul li a.active::before {
     box-shadow: 10px 5px 10px #00000025;
     padding: 0.5em 0.5em;
     background: #ffffff;
+    object-fit: cover;
 }
 
 .portfolio .portfolio-gallery .item .overlay {
@@ -1704,8 +1705,9 @@ footer .social a:hover i {
         height: fit-content;
     }
     #home .home-content .img img {
-        width: 40%;
+        max-width: 70%;
         transform: none;
+        max-height: 70%;
     }
 
     #home .home-content .block {

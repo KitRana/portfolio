@@ -1705,9 +1705,9 @@ footer .social a:hover i {
         align-items: center;
     }
     #home .home-content .img img {
-        max-width: 70%;
+        max-width: 50%;
         transform: none;
-        max-height: 70%;
+        max-height: 50%;
     }
 
     #home .home-content .block {

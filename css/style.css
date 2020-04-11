@@ -668,6 +668,10 @@ header .navbar ul li a.active::before {
     object-fit: cover;
 }
 
+.portfolio .portfolio-gallery :nth-child(1 ).item img {
+    object-fit: contain;
+}
+
 .portfolio .portfolio-gallery .item .overlay {
     position: absolute;
     left: 0;

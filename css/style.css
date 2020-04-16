@@ -802,6 +802,9 @@ header .navbar ul li a.active::before {
     padding: 0 2em;
 }
 
+.lightbox .info-card .row {
+    justify-content: center;
+}
 
 .lightbox .info-card img {
     max-width: 100%;
@@ -1363,6 +1366,21 @@ footer .social a:hover i {
 }
 
 /* RESPONSIVE */
+
+@media (min-width: 1400px){
+    .lightbox .info-card img {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+}
+
+@media (min-width: 1700px){
+    .lightbox .info-card img {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+}
+
 
 @media (max-width: 991px) {
     #home .home-content .block h1 {
